@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry Fedorov](https://up.htmlacademy.ru/adaptive/9/user/249931).
-* Наставник: [Илья Сачев](http://github.com/redly).
+* Наставник: [Илья   Сачев](http://github.com/redly).
 
 ---
 
