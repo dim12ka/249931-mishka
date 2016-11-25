@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+      <header class="header">
+        <div class="header__logo">
+        </div>
+        <nav class="top-menu">
+          <span class="top-menu__icon top-menu__icon--expand"></span>
+            <ul class="menu">
+              <li class="menu__list">
+                <a href="#" class="menu__link">
+                  <span class="menu__link-text"></span>
+                </a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link">
+                  <span class="menu__link-text"></span>
+                </a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link menu__link-icon">
+                  <span class="menu__link-text"></span>
+                  <span class="menu__link-picture"></span>
+                </a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link menu__link-icon">
+                  <span class="menu__link-text"></span>
+                  <span class="menu__link-picture"></span>
+                </a>
+              </li>
+        </nav>
+    </header>
+    <main class="content">
+      <section class="page">
+        <h1 class="page__title">Вязание на заказ</h1>
+        <p class="page__description page__description-none">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </section
+      <form method="post" name="order">
+        <span class="form__title type">Тип</span>
+          <input type="radio" name="type" value="accessory" checked="checked"></input>
+          <input type="radio" name="type" value="kids-toys"></input>
+        <span class="form__title color">Цвет</span>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
+        <span class="form__title customer">ФИО</span>
+          <label class="customer__name" for="name">
+          <input type="text" name="name" value="name" placeholder="Введите ваше имя<sup>*</sup>"></input>
+          <label class="customer__family" for="family">
+          <input type="text" name="name" value="name" placeholder="Введите вашу Фамилию<sup>*</sup>"></input>
+          <label class="customer__middle-name" for="middle-name">
+          <input type="text" name="name" value="name" placeholder="Отчество, если желаете"></input>
+        <span class="form__title form__title-contacts phone">Тел</span>
+          <input type="text" name="phone" value="phone" placeholder="+7 XXX XX XX<sup>*</sup>"</input>
+          <span class="phone__icon"></span>
+        <span class="form__title form__title-contacts email">e-mail</span>
+            <input type="email" name="phone" value="phone" placeholder="Ваш Email<sup>*</sup>"</input>
+            <span class="email__icon"></span>
+        <span class="form__title more">Доп</span>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
+        <button class="form__button button" type="button" name="button">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <section  class="footer__social">
+        <ul class="social">
+          <li class="social__list">
+            <a href="#" class="social__link social__link-inst">
+              Инстаграмм
+            </a>
+          </li>
+          <li class="social__list">
+            <a href="#" class="social__link social__link-fb">
+              Инстаграмм
+            </a>
+          </li>
+          <li class="social__list">
+            <a href="#" class="social__link social__link-tw">
+              Инстаграмм
+            </a>
+          </li>
+      </section>
+      <section class="footer__bottom">
+        <div class="designed">
+          <span class="designed__text">Разработано</span>
+          <span class="designed__icon"></span>
+        </div>
+      </section
+  </body>
+</html>
