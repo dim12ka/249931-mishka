@@ -40,31 +40,31 @@
         <h1 class="page__title">Вязание на заказ</h1>
         <p class="page__description page__description-none">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section
-      <form method="post" name="order">
-        <span class="form__title type">Тип</span>
-          <input type="radio" name="type" value="accessory" checked="checked"></input>
-          <input type="radio" name="type" value="kids-toys"></input>
-        <span class="form__title color">Цвет</span>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-          <input type="checkbox" name="color" value="white" checked="checked">Белый</input>
-        <span class="form__title customer">ФИО</span>
-          <label class="customer__name" for="name">
-          <input type="text" name="name" value="name" placeholder="Введите ваше имя<sup>*</sup>"></input>
-          <label class="customer__family" for="family">
-          <input type="text" name="name" value="name" placeholder="Введите вашу Фамилию<sup>*</sup>"></input>
-          <label class="customer__middle-name" for="middle-name">
-          <input type="text" name="name" value="name" placeholder="Отчество, если желаете"></input>
-        <span class="form__title form__title-contacts phone">Тел</span>
-          <input type="text" name="phone" value="phone" placeholder="+7 XXX XX XX<sup>*</sup>"</input>
+      <form class="form" method="post" name="order">
+        <span class="form__group-title type">Тип</span>
+          <label class="form__radio" for="accessory"><input type="radio" name="type" value="accessory" id="accessory" checked="checked">Аксессуар для интерьера</label>
+          <label class="form__radio" for="kids-toys"><input type="radio" name="type" value="kids-toys">Детская игрушка</label>
+        <span class="form__group-title color">Цвет</span>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+          <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
+        <span class="form__group-title customer">ФИО</span>
+          <label class="customer__name" for="name">Имя:</label>
+          <input type="text" name="name" value="name" id="name" placeholder="Введите ваше имя<sup>*</sup>">
+          <label class="customer__family" for="family">Фамилия:</label>
+          <input type="text" name="name" value="family" id="family" placeholder="Введите вашу Фамилию<sup>*</sup>">
+          <label class="customer__middle-name" for="middle-name">Отчество:</label>
+          <input type="text" name="name" value="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+        <span class="form__group-title form__group-title--contacts phone">Тел</span>
+          <input type="text" name="phone" value="phone" placeholder="+7 XXX XX XX<sup>*</sup>">
           <span class="phone__icon"></span>
-        <span class="form__title form__title-contacts email">e-mail</span>
-            <input type="email" name="phone" value="phone" placeholder="Ваш Email<sup>*</sup>"</input>
+        <span class="form__group-title form__group-title--contacts email">e-mail</span>
+            <input type="email" name="phone" value="phone" placeholder="Ваш Email<sup>*</sup>">
             <span class="email__icon"></span>
-        <span class="form__title more">Доп</span>
+        <span class="form__group-title more">Доп</span>
             <textarea name="textarea" rows="10" cols="50" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         <span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
         <button class="form__button button" type="button" name="button">Отправить заказ</button>
