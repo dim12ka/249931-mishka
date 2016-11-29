@@ -6,50 +6,45 @@
   </head>
   <body>
     <header class="header">
-        <div class="header__logo"></div>
-
+      <div class="header__logo"></div>
         <nav class="top-menu">
           <button class="btn-menu" type="button"></button>
           <ul class="menu">
             <li class="menu__list">
               <a href="#" class="menu__link">
-                <span class="menu__link-text">Каталог товаров</span>
+                <span class="menu__link--text">Каталог товаров</span>
               </a>
             </li>
             <li class="menu__list">
               <a href="#" class="menu__link">
-                <span class="menu__link-text"></span>
+                <span class="menu__link--text">Вязание на заказ</span>
               </a>
             </li>
             <li class="menu__list">
               <a href="#" class="menu__link menu__link--icon">
                 <span class="menu__link-icon"></span>
-                <span class="menu__link-text"></span>
+                <span class="menu__link--text">Поиск по сайту</span>
               </a>
             </li>
             <li class="menu__list">
               <a href="#" class="menu__link menu__link--icon">
                 <span class="menu__link-icon"></span>
-                <span class="menu__link-text"></span>
+                <span class="menu__link--text cart--empty">Корзина: пока пустая</span>
               </a>
             </li>
           </ul>
         </nav>
-        <!--
-          Нужно другое название
-         -->
-        <div class="header__slider">
-          <div class="slider__title">Милые штуки ручной работы для дома</div>
-          <div class="slider__bottom">
+        <div class="page-title">
+          <h1 class="page-title__text">Милые штуки ручной работы для дома</h1>
+          <div class="page-title__bottom">
             <a class="bottom-link bottom-link--icon bottom-link--icon-interior">
               предметы<br>интерьеры
             </a>
-            <a class="bottom-link">
-              <span class="bottom__text"></span>
-              <span class="bottom__icon"></span>
+            <a class="bottom-link bottom-link--icon bottom-link--icon-games">
+              Детские<br>игрушки
             </a>
+          </div>
         </div>
-      </div>
     </header>
     <main class="content">
       <article class="product-card">
@@ -57,57 +52,54 @@
         <div class="product-card__info"></div>
         <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <ul class="product-card__features">
-          <li>
-            <!-- Задать класс -->
-            <span>Цвет:</span>
+          <li class="feature__list">
+            <span class="feature__list--type">Цвет:</span>
             «Тиффани»/серый
           </li>
-          <li>
-            <span>Диаметр:</span>
+          <li class="feature__list">
+            <span class="feature__list--type">Диаметр:</span>
             25 см
           </li>
-          <li>
-            <span>Высота:</span>
+          <li class="feature__list">
+            <span class="feature__list--type">Высота:</span>
             15 см
           </li>
         </ul>
-
         <img src="http://placehold.it/260x315" class="product-card__img">
         <div class="product-card__price">Цена: 990 руб.</div>
-        <!-- Лучше ссылка -->
-        <button class="products-card__button button" type="button">Заказать</button>
+        <a class="products-card__button button" href="#">Заказать</a>
       </article>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="benefits">
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
           <li class="benefits__item">
             <span class="benefits__icon"></span>
-            <span class="benefits__text">Экологически  чистые материалы</span>
+            <span class="benefits__text">Экологически чистые материалы</span>
           </li>
         </ul>
       </section>
       <section class="reviews">
-        <h3 class="review__title">Отзывы</h3>
+        <h3 class="reviews__title">Отзывы</h3>
         <div class="reviews-slider">
           <div class="review">
             <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -120,8 +112,7 @@
         <div class="review__controls">
           <button class="button__control button__control-left" type="button"></button>
           <button class="button__control button__control-right" type="button"></button>
-
-          <button class="botton__review button" type="button">Написать</button>
+          <a class="button__review button" href="">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -129,13 +120,11 @@
         <ul class="contact__list">
           <li class="contact__item">
             <span class="contact__type">email:</span>
-            <span class="contact__text">
-              <a mailto="info@mimimshkashop.ru">info@mimimshkashop.ru</a>
-            </span>
+            <a class="contact__type--text" href="mailto:info@mimimshkashop.ru">info@mimimshkashop.ru</a>
           </li>
           <li class="contact__item">
             <span class="contact__type">адрес:</span>
-            <p class="contact__text">
+            <p class="contact__type--text">
               г. Санкт-Петербург,
               ул. Большая Конюшенная,
               д. 19/8, офис 101
