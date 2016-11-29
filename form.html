@@ -6,8 +6,7 @@
   </head>
   <body>
       <header class="header">
-        <div class="header__logo">
-        </div>
+        <a href="/" class="header__logo"></a>
         <nav class="top-menu">
           <span class="top-menu__icon top-menu__icon--expand"></span>
             <ul class="menu">
@@ -39,10 +38,50 @@
       <section class="page">
         <h1 class="page__title">Вязание на заказ</h1>
         <p class="page__description page__description-none">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      </section
+      </section>
+
       <form class="form" method="post" name="order">
+        <fieldset class="form-group">
+          <div class="form-group__title">Тип</div>
+
+          <div class="form-radio-checkbox">
+            <input class="form__radio" type="radio" name="type" id="accessory-interier">
+            <label class="form__label" for="accessory-interier">Аксессуары для интерьера</label>
+          </div>
+          <div class="form-radio-checkbox">
+            <input class="form__radio" type="radio" name="type" id="accessory-interier">
+            <label class="form__label" for="accessory-interier">Детская игрушка</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <div class="form-group__title">ФИО</div>
+
+          <div class="form-field-group">
+            <label for="name">Имя:</label>
+            <input class="form__field" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          </div>
+          <div class="form-field-group">
+            <label for="surname">Фамилия:</label>
+            <input class="form__field" type="text" name="surname" id="surname" placeholder="Введите ваше фамилия *">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <div class="form-group__title">Тел</div>
+
+          <div class="form-field-group form-field-group--with-icon">
+            <label for="name">Имя:</label>
+            <input class="form__field" type="tel" name="name" id="name" placeholder="+7 XXX XX XX*">
+            <span class="form-icon form-icon--phone"></span>
+          </div>
+        </fieldset>
+
         <span class="form__group-title type">Тип</span>
-          <label class="form__radio" for="accessory"><input type="radio" name="type" value="accessory" id="accessory" checked="checked">Аксессуар для интерьера</label>
+          <label class="form__radio">
+            <input type="radio" name="type" value="accessory" checked="checked">
+            Аксессуар для интерьера
+          </label>
           <label class="form__radio" for="kids-toys"><input type="radio" name="type" value="kids-toys">Детская игрушка</label>
         <span class="form__group-title color">Цвет</span>
           <label class="form__checkbox"><input type="checkbox" name="color" value="white" checked="checked">Белый</label>
