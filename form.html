@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Form</title>
   </head>
   <body>
     <header class="header">
       <div class="header__logo"></div>
-      <nav class="top-menu">
+      <nav class="header__menu">
         <button class="btn-menu hamburger" type="button"></button>
           <ul class="menu">
             <li class="menu__list">
@@ -38,7 +39,7 @@
     <main class="content">
       <section class="page">
         <h1 class="page__title">Вязание на заказ</h1>
-        <p class="page__description page__description-none">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
       <form class="form" method="post" name="order">
         <fieldset class="form-group">
@@ -84,43 +85,43 @@
         <fieldset class="form-group">
           <div class="form-group__title">ФИО</div>
           <div class="form-field">
-            <label class="form-field__label" for="name">Имя:</label>
-            <input class="form__field__text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            <label class="field__label" for="name">Имя:</label>
+            <input class="field__text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
           </div>
           <div class="form-field-group">
-            <label for="surname">Фамилия:</label>
-            <input class="form__field" type="text" name="surname" id="surname" placeholder="Введите вашу Фамилию *">
+            <label class="field__label" for="surname">Фамилия:</label>
+            <input class="field__text" type="text" name="surname" id="surname" placeholder="Введите вашу Фамилию *">
           </div>
           <div class="form-field-group">
             <label for="middle-name">Отчество:</label>
-            <input class="form__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            <input class="field__text" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
 
         <fieldset class="form-group">
           <div class="form-group__title">Тел</div>
           <div class="form-field form-field--with-icon">
-            <input class="form__field__text" type="tel" name="tel" placeholder="+7 XXX XX XX*">
-            <span class="form-field__icon icon--phone"></span>
+            <input class="field__text" type="tel" name="tel" placeholder="+7 XXX XX XX*">
+            <span class="field__icon icon--phone"></span>
           </div>
         </fieldset>
 
         <fieldset class="form-group">
           <div class="form-group__title">Тел</div>
           <div class="form-field form-field--with-icon">
-            <input class="form__field__text" type="email" name="email" placeholder="Ваш Email*">
-            <span class="form-field__icon icon--email"></span>
+            <input class="field__text" type="email" name="email" placeholder="Ваш Email*">
+            <span class="field__icon icon--email"></span>
           </div>
         </fieldset>
 
         <fieldset class="form-group">
           <div class="form-group__title">Доп</div>
           <div class="form-field form-field--textarea">
-            <input class="form__field__text" type="textarea" name="more" placeholder="Опишите все ваши пожелания к заказу">
+            <input class="field__text" type="textarea" name="more" placeholder="Опишите все ваши пожелания к заказу">
           </div>
         </fieldset>
 
-        <span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
+        <span class="form__tip">*Поля обязательны для заполнения</span>
         <button class="form__button button" type="button" name="button">Отправить заказ</button>
       </form>
     </main>

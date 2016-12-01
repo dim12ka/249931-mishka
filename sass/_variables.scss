@@ -1,0 +1,23 @@
+$text-color: #444444;
+$font-size: 15;
+$body-font: "OpenSans", arial, sans-serif;
+$header-font: "OpenSansBold", Arial, sans-serif;
+$header-color: #ffffff;
+
+@font-face {
+  font-family: "OpenSans";
+  src:
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src:
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
