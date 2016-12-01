@@ -1,7 +1,6 @@
 $text-color: #444444;
 $font-size: 15;
 $body-font: "OpenSans", arial, sans-serif;
-$header-font: "OpenSansBold", Arial, sans-serif;
 $header-color: #ffffff;
 
 @font-face {
@@ -14,7 +13,7 @@ $header-color: #ffffff;
 }
 
 @font-face {
-  font-family: "OpenSansBold";
+  font-family: "OpenSans";
   src:
     url("../fonts/opensansbold.woff") format("woff"),
     url("../fonts/opensansbold.woff2") format("woff2");

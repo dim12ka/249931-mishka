@@ -88,7 +88,8 @@
   padding-left: 75px;
   text-decoration: none;
   font-size: 17px;
-  font-family: $header-font;
+  font-family: $body-font;
+  font-weight: bold;
   color: #000;
 
 }
@@ -108,9 +109,9 @@
     &__bg-image {
     background-image: url(../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
     display: block;
-    width: 320px;
+
     height: 294px;
 
   }
@@ -119,7 +120,8 @@
     position: absolute;
     width: 250px;
     top: 0;
-    font-family: $header-font;
+    font-family: $body-font;
+    font-weight: bold;
     font-size: 27px;
     padding: 0 37px;
     text-align: center;
@@ -140,7 +142,8 @@
   padding: 30px 30px 30px 30px;
   text-decoration: none;
   font-size: 19px;
-  font-family: $header-font;
+  font-family: $body-font;
+  font-weight: bold;
   color: #fff;
 
     &:hover {
