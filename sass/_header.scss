@@ -33,14 +33,8 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-
 .btn-menu span {
   background: #000;
-=======
-.btn-menu > span {
-  position: relative;
->>>>>>> e94f01152d35710d57daad8cab78215965431781
   display: inline-block;
   height: 2px;
   position: relative;
@@ -49,18 +43,18 @@
 
 }
 
-.btn-menu > span::before {
+.btn-menu span::before {
   top: 5px;
 }
 
-.btn-menu > span::after {
+.btn-menu span::after {
   top: -5px;
 }
 
-.btn-menu > span::before,
-.btn-menu > span::after {
+.btn-menu span::before,
+.btn-menu span::after {
   background: #000;
-  content: "";
+  content: '';
   height: 2px;
   left: 0;
   position: absolute;
@@ -70,29 +64,29 @@
 
 
 .menu {
+  display: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: none;
 }
 
 .menu__list {
-  position: relative;
   border-top: 1px solid #ececec;
+  position: relative;
   vertical-align: middle;
 
 }
 
 .menu__link {
+  color: #000;
   display: block;
-  padding-top: 31px;
+  font-family: $body-font;
+  font-size: 17px;
+  font-weight: bold;
   padding-bottom: 34px;
   padding-left: 75px;
+  padding-top: 31px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: $body-font;
-  font-weight: bold;
-  color: #000;
 
 }
 
@@ -105,9 +99,9 @@
 }
 
 .page-title {
-  position: relative;
   height: 490px;
   margin-bottom: 0;
+  position: relative;
 
   &__bg-image {
     background-image: url('../img/hero-mobile@1x.jpg');
@@ -130,30 +124,26 @@
   }
 
   &__items-box {
-    position: relative;
     min-width: 320px;
+    position: relative;
   }
 }
 
 .item-box {
   box-sizing: border-box;
-  position: relative;
-  display: block;
-  width: 100%;
-<<<<<<< HEAD
-  box-sizing: border-box;
-=======
->>>>>>> e94f01152d35710d57daad8cab78215965431781
-  padding: 30px;
-  text-decoration: none;
-  font-size: 19px;
-  font-family: $body-font;
-  font-weight: bold;
   color: #fff;
+  display: block;
+  font-family: $body-font;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 30px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
 
   &:hover {
-    padding: 35px 30px;
     opacity: .90;
+    padding: 35px 30px;
     }
 
     &--interior {
@@ -161,17 +151,17 @@
     }
 
     &--games {
-      display: block;
       background-color: #56c3b2;
+      display: block;
     }
 
     &__icon {
-      position: absolute;
       top: 0;
-      right: 0;
       bottom: 0;
+      right: 0;
       margin: auto;
       opacity: .20;
+      position: absolute;
 
       }
 
