@@ -1,6 +1,6 @@
 .header {
+  background: #fff;
   max-width: 320px;
-  background: #ffffff;
 }
 
 .header-top {
@@ -8,15 +8,14 @@
 }
 
 .header-top__logo {
-  width: 85px;
   height: 35px;
-  padding: 22px 0;
   margin: 0 auto;
+  padding: 22px 0;
+  width: 85px;
 
-    &:hover {
-      opacity: 0.60;
-    }
-
+  &:hover {
+    opacity: .60;
+}
 }
 
 .btn-menu {
@@ -34,9 +33,14 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 
 .btn-menu span {
   background: #000;
+=======
+.btn-menu > span {
+  position: relative;
+>>>>>>> e94f01152d35710d57daad8cab78215965431781
   display: inline-block;
   height: 2px;
   position: relative;
@@ -132,10 +136,14 @@
 }
 
 .item-box {
+  box-sizing: border-box;
   position: relative;
   display: block;
   width: 100%;
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+>>>>>>> e94f01152d35710d57daad8cab78215965431781
   padding: 30px;
   text-decoration: none;
   font-size: 19px;
@@ -143,9 +151,9 @@
   font-weight: bold;
   color: #fff;
 
-    &:hover {
-      padding: 35px 30px;
-      opacity: 0.9;
+  &:hover {
+    padding: 35px 30px;
+    opacity: .90;
     }
 
     &--interior {
@@ -171,14 +179,14 @@
       right: 36px;
       width: 40px;
       height: 62px;
-      background: url("../img/icon-interior.svg") 0 0 no-repeat;
+      background-image: url('../img/icon-interior.svg');
     }
 
     &__icon--games {
       right: 26px;
       width: 60px;
       height: 60px;
-      background: url("../img/icon-toy.svg") 0 0 no-repeat;
+      background: url('../img/icon-toy.svg') 0 0 no-repeat;
     }
 
 }
