@@ -1,5 +1,5 @@
 .header {
-  background: #fff;
+  background: $white;
   max-width: 320px;
 }
 
@@ -30,7 +30,7 @@
   cursor: pointer;
 
     span {
-    background: #000;
+    background: $black;
     display: inline-block;
     height: 2px;
     position: relative;
@@ -39,7 +39,7 @@
 
     &::before,
     &::after {
-      background: #000;
+      background: $black;
       content: '';
       height: 2px;
       left: 0;
@@ -135,11 +135,11 @@
     }
 
   &--interior {
-    background-color: $lightGreen;
+    background-color: $lightgreen;
   }
 
   &--games {
-    background-color: $darkGreen;
+    background-color: $darkgreen;
     display: block;
   }
 
@@ -151,14 +151,14 @@
     opacity: .2;
     position: absolute;
 
-    &__icon--interior {
+    &--interior {
       background-image: url('../img/icon-interior.svg');
       height: 62px;
       right: 36px;
       width: 40px;
     }
 
-    &__icon--games {
+    &--games {
       background: url('../img/icon-toy.svg') 0 0 no-repeat;
       height: 60px;
       right: 26px;
