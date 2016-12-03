@@ -1,5 +1,3 @@
-@import "_variables";
-
 .header {
   max-width: 320px;
   background: #ffffff;
@@ -37,13 +35,13 @@
 }
 
 
-.btn-menu > span {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  vertical-align: middle;
+.btn-menu span {
   background: #000;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 20px;
 
 }
 
@@ -57,13 +55,13 @@
 
 .btn-menu > span::before,
 .btn-menu > span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 2px;
   background: #000;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
   transform-origin: 50% 50%;
+  width: 20px;
 }
 
 
@@ -95,10 +93,10 @@
 }
 
 .menu__link--icon {
-  position: absolute;
   left: 0;
   margin-left: 25px;
-  opacity: 0.20;
+  opacity: .20;
+  position: absolute;
 
 }
 
@@ -106,14 +104,13 @@
   position: relative;
   height: 490px;
   margin-bottom: 0;
-    &__bg-image {
-    background-image: url(../img/hero-mobile@1x.jpg);
-    background-repeat: no-repeat;
+
+  &__bg-image {
+    background-image: url('../img/hero-mobile@1x.jpg');
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     display: block;
-
     height: 294px;
-
   }
 
   &__text {
@@ -139,7 +136,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
   text-decoration: none;
   font-size: 19px;
   font-family: $body-font;
@@ -185,13 +182,3 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
