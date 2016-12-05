@@ -7,13 +7,13 @@
   position: relative;
 
   &__logo {
-  height: 35px;
-  margin: 0 auto;
-  padding: 22px 0;
-  width: 85px;
+    height: 35px;
+    margin: 0 auto;
+    padding: 22px 0;
+    width: 85px;
 
-  &:hover {
-    opacity: .6;
+    &:hover {
+      opacity: .6;
     }
   }
 }
@@ -30,31 +30,31 @@
   cursor: pointer;
 
     span {
-    background: $black;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 20px;
-
-    &::before,
-    &::after {
       background: $black;
-      content: '';
+      display: inline-block;
       height: 2px;
-      left: 0;
-      position: absolute;
-      transform-origin: 50% 50%;
+      position: relative;
+      vertical-align: middle;
       width: 20px;
-    }
 
-    &::before {
-      top: 5px;
-    }
+      &::before,
+      &::after {
+        background: $black;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        transform-origin: 50% 50%;
+        width: 20px;
+      }
 
-    &::after {
-      top: -5px;
-    }
+      &::before {
+        top: 5px;
+      }
+
+      &::after {
+        top: -5px;
+      }
   }
 }
 
@@ -78,7 +78,7 @@
     padding-top: 31px;
     text-decoration: none;
 
-    &--icon {
+    &-icon {
       left: 0;
       margin-left: 25px;
       opacity: .2;
@@ -110,37 +110,37 @@
     padding: 0 37px;
     text-align: center;
   }
-
-  &__items-box {
-    min-width: 320px;
-    position: relative;
-  }
 }
 
 .item-box {
-  box-sizing: border-box;
-  color: $white;
-  display: block;
-  font-family: $body-font;
-  font-size: 19px;
-  font-weight: bold;
-  padding: 30px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
+    min-width: 320px;
+    position: relative;
 
-  &:hover {
-    opacity: .9;
-    padding: 35px 30px;
+  &__link {
+    box-sizing: border-box;
+    color: $white;
+    display: block;
+    font-family: $body-font;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 30px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      opacity: .9;
+      padding: 35px 30px;
+      }
+
+    &--interior {
+      background-color: $lightgreen;
     }
 
-  &--interior {
-    background-color: $lightgreen;
-  }
-
-  &--games {
-    background-color: $darkgreen;
-    display: block;
+    &--games {
+      background-color: $darkgreen;
+      display: block;
+    }
   }
 
   &__icon {

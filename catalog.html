@@ -1,139 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Catalog</title>
   </head>
+
   <body>
-      <header class="header">
-        <div class="header__logo"></div>
-        <nav class="top-menu">
-          <button class="btn-menu hamburger" type="button"></button>
-            <ul class="menu">
-              <li class="menu__list">
-                <a href="#" class="menu__link">
-                  <span class="menu__link--text">Каталог товаров</span>
-                </a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link">
-                  <span class="menu__link--text">Вязание на заказ</span>
-                </a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link menu__link--icon">
-                  <span class="menu__link-icon"></span>
-                  <span class="menu__link--text">Поиск по сайту</span>
-                </a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link menu__link--icon">
-                  <span class="menu__link-icon"></span>
-                  <span class="menu__link--text cart--empty">Корзина: пока пустая</span>
-                </a>
-              </li>
-            </ul>
-        </nav>
-      </header>
-      <main class="content">
-        <section class="page">
-          <h1 class="page__title">Каталог товаров</h1>
-          <p class="page__description page__description-none"></p>
-        </section>
-          <article class="product">
-            <h2 class="product__title">Зайчик-попрыгайчик</h2>
-            <ul class="product-card__features">
-              <li>
-                <span>Рост</span>
-                30 см
-              </li>
-              <li>
-                <span>вес</span>
-                200 г
-              </li>
-            <img src="http://placehold.it/260x315" class="product__img">
-            <span class="product-card__price">Цена: 1200 руб.</span>
-            <a class="product__button button" type="buttom"></a>
-          </article>
-          <article class="product">
-            <h2 class="product__title">Зайчик-попрыгайчик</h1>
-            <ul class="product-card__features">
-              <li>
-                <span>Рост</span>
-                30 см
-              </li>
-              <li>
-                <span>вес</span>
-                200 г
-              </li>
-            <img src="http://placehold.it/260x315" class="product__img"
-            <span class="product-card__price">Цена: 1200 руб.</span>
-            <a class="product__button button" type="buttom"></a>
-          </article>
-          <article class="product">
-            <h2 class="product__title">Зайчик-попрыгайчик</h1>
-            <ul class="product-card__features">
-              <li>
-                <span>Рост</span>
-                30 см
-              </li>
-              <li>
-                <span>вес</span>
-                200 г
-              </li>
-            <img src="http://placehold.it/260x315" class="product__img">
-            <span class="product-card__price">Цена: 1200 руб.</span>
-            <a class="product__button button" type="buttom"></a>
-          </article>
-          <section class="howto">
-            <h2 class="howto__title">Процесс производства</h2>
-            <span class="howto__icon howto__icon-video"></span>
-            <span class="howto__img howto__video"></span>
-            <p class="howto__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a href="#" class="howto__button button">Сделать заказ</a>
-          </section>
-      </main>
-      <footer class="footer">
-        <ul class="social">
-          <li class="social__list">
-            <a href="#" class="social__link social__link--inst">
-                Инстаграмм
-            </a>
-          </li>
-          <li class="social__list">
-            <a href="#" class="social__link social__link--fb">
-                Инстаграмм
-            </a>
-          </li>
-          <li class="social__list">
-            <a href="#" class="social__link social__link--tw">
-                Инстаграмм
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright">
-          <a class="footer-htmlacademy" href="http://htmlacademy.ru">
-              Разработано
-            <span class="footer-htmlacademy__icon"></span>
-          </a>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-top__logo">
+          <img src="img/logo-mobile.svg" alt="Логотип">
         </div>
-      </footer>
-      <div class="popup">
-        <h3 class="popup__title">Добавить в корозину</h3>
-        <span class="popup__desc">Выберите размер</span>
-        <ul class="size">
-          <li class="size__type">
-            s
-          </li>
-          <li class="size__type">
-            m
-          </li>
-          <li class="size__type">
-            l
-          </li>
-        </ul>
-        <button class="popup__button-add button" type="button" name="add">Добавить</button>
+        <nav class="header-top__menu">
+          <button class="btn-menu" type="button">
+            <span></span>
+          </button>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__link-title">Каталог товаров</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__link-title">Вязание на заказ</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__link-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                  </svg>
+                </span>
+                <span class="menu__link-title">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__link-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                  </svg>
+                </span>
+                <span class="menu__link-title cart--empty">Корзина: пока пустая</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <main class="content">
+      <section class="page">
+        <h1 class="page__title">Каталог товаров</h1>
+        <p class="page__description page__description-none"></p>
+      </section>
+      <article class="product">
+        <h2 class="product__title">Зайчик-попрыгайчик</h2>
+        <ul class="product-card__features">
+          <li>
+            <span>Рост</span> 30 см
+          </li>
+          <li>
+            <span>вес</span> 200 г
+          </li>
+          <img src="http://placehold.it/260x315" class="product__img">
+          <span class="product-card__price">Цена: 1200 руб.</span>
+          <a class="product__button button" type="buttom"></a>
+      </article>
+      <article class="product">
+        <h2 class="product__title">Зайчик-попрыгайчик</h1>
+        <ul class="product-card__features">
+          <li>
+            <span>Рост</span>
+            30 см
+          </li>
+          <li>
+            <span>вес</span>
+            200 г
+          </li>
+        <img src="http://placehold.it/260x315" class="product__img"
+        <span class="product-card__price">Цена: 1200 руб.</span>
+        <a class="product__button button" type="buttom"></a>
+      </article>
+      <article class="product">
+        <h2 class="product__title">Зайчик-попрыгайчик</h1>
+        <ul class="product-card__features">
+          <li>
+            <span>Рост</span>
+            30 см
+          </li>
+          <li>
+            <span>вес</span>
+            200 г
+          </li>
+        <img src="http://placehold.it/260x315" class="product__img">
+        <span class="product-card__price">Цена: 1200 руб.</span>
+        <a class="product__button button" type="buttom"></a>
+      </article>
+      <section class="howto">
+        <h2 class="howto__title">Процесс производства</h2>
+        <span class="howto__icon howto__icon-video"></span>
+        <span class="howto__img howto__video"></span>
+        <p class="howto__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="howto__button button">Сделать заказ</a>
+        </section>
+    </main>
+    <footer class="footer">
+      <ul class="social">
+        <li class="social__list">
+          <a href="#" class="social__link social__link--inst">
+            Инстаграмм
+          </a>
+        </li>
+        <li class="social__list">
+          <a href="#" class="social__link social__link--fb">
+            Инстаграмм
+          </a>
+        </li>
+        <li class="social__list">
+          <a href="#" class="social__link social__link--tw">
+            Инстаграмм
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="http://htmlacademy.ru">
+          Разработано
+          <span class="copyright__icon"></span>
+        </a>
+      </div>
+    </footer>
+    <div class="popup">
+      <h3 class="popup__title">Добавить в корозину</h3>
+      <span class="popup__desc">Выберите размер</span>
+      <ul class="size">
+        <li class="size__type">
+          s
+        </li>
+        <li class="size__type">
+          m
+        </li>
+        <li class="size__type">
+          l
+        </li>
+      </ul>
+      <button class="popup__button-add button" type="button">Добавить</button>
+    </div>
   </body>
+
 </html>
