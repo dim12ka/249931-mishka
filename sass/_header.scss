@@ -29,38 +29,38 @@
   border: 0;
   cursor: pointer;
 
-    span {
+  span {
+    background: $black;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px;
+
+    &::before,
+    &::after {
       background: $black;
-      display: inline-block;
+      content: '';
       height: 2px;
-      position: relative;
-      vertical-align: middle;
+      left: 0;
+      position: absolute;
+      transform-origin: 50% 50%;
       width: 20px;
+    }
 
-      &::before,
-      &::after {
-        background: $black;
-        content: '';
-        height: 2px;
-        left: 0;
-        position: absolute;
-        transform-origin: 50% 50%;
-        width: 20px;
-      }
+    &::before {
+      top: 5px;
+    }
 
-      &::before {
-        top: 5px;
-      }
-
-      &::after {
-        top: -5px;
-      }
+    &::after {
+      top: -5px;
+    }
   }
 }
 
 .menu {
-  display: none;
   @include no-list;
+  display: none;
 
   &__item {
     border-top: 1px solid #ececec;
@@ -113,8 +113,8 @@
 }
 
 .item-box {
-    min-width: 320px;
-    position: relative;
+  min-width: 320px;
+  position: relative;
 
   &__link {
     box-sizing: border-box;
