@@ -1,6 +1,6 @@
 $text-color: #444;
 $font-size: 15;
-$body-font: 'OpenSans', Arial, sans-serif;
+$body-font: "OpenSans", Arial, sans-serif;
 $black: #000;
 $white: #fff;
 $lightgreen: #63d1bb;
@@ -9,17 +9,19 @@ $darkgreen: #56c3b2;
 
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensans.woff') format('woff'),
-       url('../fonts/opensans.woff2') format('woff2');
-  font-style: normal;
+  font-family: "OpenSans";
   font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff") format("woff"),
+  url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensansbold.woff') format('woff'),
-       url('../fonts/opensansbold.woff2') format('woff2');
-  font-style: normal;
+  font-family: "OpenSans";
   font-weight: bold;
+  font-style: normal;
+
+  src: url("../fonts/opensansbold.woff") format("woff"),
+  url("../fonts/opensansbold.woff2") format("woff2");
 }
