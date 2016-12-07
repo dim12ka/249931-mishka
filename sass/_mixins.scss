@@ -1,5 +1,41 @@
 @mixin no-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+}
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin center {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin zigzag {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+
+  display: block;
+  width: 320px;
+  height: 7px;
+
+  background: url("../img/zigzag-line-desktop.png") no-repeat;
 }

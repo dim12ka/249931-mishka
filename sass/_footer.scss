@@ -1,0 +1,57 @@
+.footer {
+  position: relative;
+  height: 160px;
+  background-color: $footercolor;
+
+  @include container;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    height: 1px;
+    margin-left: -130px;
+    background: #e5e5e5;
+  }
+}
+
+.social {
+  @include no-list;
+
+  padding: 24px 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social__list {
+  display: inline-block;
+
+  & + li {
+    margin-left: 30px;
+  }
+}
+
+.copyright {
+  padding: 21px 0;
+  text-align: center;
+}
+
+.copyright__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.copyright__title {
+  font-weight: bold;
+  font-size: 19px;
+  color: $black;
+}
+
+.copyright__icon {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: top;
+  fill: $lightgreen;
+}

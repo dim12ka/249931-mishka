@@ -1,0 +1,50 @@
+.reviews {
+  @include center;
+}
+
+.slider-review__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.slider-review__author-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: $black;
+}
+
+.slider-review__author-contact {
+  font-size: 18px;
+  color: $text-color;
+}
+
+.reviews__controls {
+  margin-top: 30px;
+
+  @include clearfix;
+}
+
+.button__control {
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: 1px solid $darkgray;
+
+  &--left {
+    float: left;
+    background: url("../img/icon-left-arrow.svg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--right {
+    float: right;
+    background: url("../img/icon-right-arrow.svg") no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.button__write-review {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,41 @@
+.about-us {
+  position: relative;
+
+  @include center;
+}
+
+.about-us__title {
+  margin-bottom: 25px;
+
+  font-size: 25px;
+
+  &::before {
+    @include zigzag;
+  }
+}
+
+.benefits {
+  margin-bottom: 40px;
+
+  @include no-list;
+}
+
+.benefits__item {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 17px;
+  color: $black;
+}
+
+.benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  fill: $lightgreen;
+}
