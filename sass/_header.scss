@@ -25,7 +25,7 @@
 .btn-menu {
   position: absolute;
   top: 25px;
-  right: -6px;
+  right: 0;
   box-sizing: content-box;
   width: 20px;
   height: 20px;
@@ -64,8 +64,8 @@
 
 .menu {
   @include no-list;
-  display: none;
 
+  display: none;
 
   &__item {
     position: relative;
@@ -94,9 +94,9 @@
 
 .page-title {
   @include container;
+
   position: relative;
   margin-bottom: 0;
-
 
   &__bg-image {
     display: block;

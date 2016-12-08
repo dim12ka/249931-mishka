@@ -14,14 +14,13 @@
 }
 
 .feature {
-  margin-bottom: 30px;
-
   @include no-list;
+
+  margin-bottom: 30px;
 }
 
 .feature__item {
   line-height: 40px;
-
   border-bottom: 1px solid $darkgray;
 }
 
@@ -33,7 +32,6 @@
 .product-card__price {
   display: table;
   margin: 0 auto;
-
   font-size: 17px;
   line-height: 70px;
   text-align: center;
@@ -44,13 +42,11 @@
   display: inline-block;
   width: 256px;
   height: 48px;
-
   font-weight: bold;
   font-size: 17px;
   line-height: 48px;
   vertical-align: middle;
   text-align: center;
-
   border: 2px solid $text-color;
   cursor: pointer;
 }
