@@ -1,20 +1,23 @@
 .header {
-  min-width: 320px;
   background: $white;
 }
 
 .header-top {
   position: relative;
 
-  @include center;
-
   @include container;
 
-  &__logo {
+  .header-top__logo {
     width: 85px;
     height: 35px;
     margin: 0 auto;
     padding: 22px 0;
+    background: url("../img/logo-mobile.svg") no-repeat center center;
+
+    @include tablet {
+      display: inline-block;
+    }
+
 
     &:hover {
       opacity: 0.6;
@@ -25,7 +28,7 @@
 .btn-menu {
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 30px;
   box-sizing: content-box;
   width: 20px;
   height: 20px;
@@ -69,7 +72,7 @@
 
   &__item {
     position: relative;
-    border-top: 1px solid #ececec;
+    border-top: 1px solid $darkgray;
   }
 
   &__link {
@@ -93,10 +96,17 @@
 }
 
 .page-title {
-  @include container;
-
   position: relative;
   margin-bottom: 0;
+  background-color: #f9f9f9;
+
+  &::before {
+    content: "";
+    display: block;
+    width: auto;
+    height: 1px;
+    background-color: $darkgray;
+  }
 
   &__bg-image {
     display: block;
@@ -104,25 +114,55 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @include tablet {
+      display: block;
+      background-image: url("../img/hero-desktop.jpg");
+      height: 736px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+
+    @include desktop {
+      display: block;
+      background-image: url("../img/hero-desktop.jpg");
+      height: 746px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
   &__text {
     position: absolute;
-    top: 20px;
-    width: 250px;
-    padding: 0 37px;
+    top: 39px;
+    width: auto;
+    right: 0;
+    left: 0;
+    padding: 0 36px;
     font-weight: bold;
     font-size: 27px;
     font-family: $body-font;
     text-align: center;
+
+    @include tablet {
+      top: 145px;
+      font-size: 43px;
+      padding: 0 36px;
+    }
+
+
+    @include desktop {
+      top: 130px;
+      font-size: 53px;
+    }
   }
 }
 
 .item-box {
-  @include container;
-
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 0 30px 30px;
 
   &__link {
     position: relative;
@@ -171,6 +211,63 @@
       width: 60px;
       height: 60px;
       background: url("../img/icon-toy.svg") 0 0 no-repeat;
+    }
+  }
+}
+
+@include tablet {
+  .item-box {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+
+    @include container;
+
+    .item-box__link {
+      display: inline-block;
+
+      &--interior {
+        float: left;
+        width: 50%;
+      }
+
+      &--games {
+        float: right;
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  .item-box {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+
+    @include container;
+
+    .item-box__link {
+      display: inline-block;
+
+      &--interior {
+        float: left;
+        width: 50%;
+      }
+
+      &--games {
+        float: right;
+        width: 50%;
+      }
     }
   }
 }

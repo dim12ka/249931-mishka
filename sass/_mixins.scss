@@ -1,13 +1,33 @@
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 @mixin no-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 @mixin container {
   width: 320px;
   margin: 0 auto;
+
+  @include tablet {
+    width: 668px;
+  }
+
+
+  @include desktop {
+    width: 1050px;
+  }
 }
 
 @mixin center {
@@ -19,9 +39,9 @@
   &::before,
   &::after {
     content: "";
-
     display: table;
   }
+
   &::after {
     clear: both;
   }
@@ -32,10 +52,8 @@
   position: absolute;
   top: -30px;
   left: -30px;
-
   display: block;
   width: 320px;
   height: 7px;
-
   background: url("../img/zigzag-line-desktop.png") no-repeat;
 }
