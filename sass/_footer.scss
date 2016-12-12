@@ -1,9 +1,6 @@
 .footer {
   position: relative;
-  height: 160px;
   background-color: $footercolor;
-
-  @include container;
 
   &::after {
     content: "";
@@ -45,13 +42,68 @@
 
 .copyright__title {
   font-weight: bold;
-  font-size: 19px;
+  font-size: em(19);
   color: $black;
 }
 
 .copyright__icon {
   display: inline-block;
   margin-left: 30px;
-  vertical-align: top;
+  vertical-align: middle;
   fill: $lightgreen;
+}
+
+@include tablet {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 53px;
+
+    &::before {
+      content: "";
+      background: url("../img/logo__footer.svg") no-repeat;
+      width: 102px;
+      height: 34px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .social {
+      padding: 0;
+    }
+
+    .copyright {
+      padding: 0;
+    }
+  }
+}
+
+
+@include desktop {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 53px;
+
+    &::before {
+      content: "";
+      background: url("../img/logo__footer.svg") no-repeat;
+      width: 102px;
+      height: 34px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .social {
+      padding: 0;
+    }
+
+    .copyright {
+      padding: 0;
+    }
+  }
 }

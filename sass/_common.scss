@@ -1,0 +1,68 @@
+body {
+  font-size: em(15);
+  font-family: $body-font;
+  color: $text-color;
+  transition: all 0.2s linear;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: $body-font;
+  color: $black;
+}
+
+h3 {
+  font-size: em(25);
+}
+
+h4 {
+  font-size: em(18);
+}
+
+.button {
+  display: block;
+  width: auto;
+  height: 48px;
+  font-weight: bold;
+  font-size: em(17);
+  line-height: 48px;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid $text-color;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button {
+  margin: 30 auto;
+  padding: 0;
+}
+
+.button__write-review,
+.product-card__button {
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.content {
+  @include clearfix;
+}
+
+.hidden {
+  display: none;
+}

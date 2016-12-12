@@ -1,13 +1,11 @@
 .about-us {
   position: relative;
-
-  @include center;
+  padding: 0 30px;
 }
 
 .about-us__title {
-  margin-bottom: 25px;
-
-  font-size: 25px;
+  margin-bottom: em(25);
+  font-size: em(25);
 
   &::before {
     @include zigzag;
@@ -22,11 +20,9 @@
 
 .benefits__item {
   position: relative;
-
   margin-bottom: 20px;
-
   font-weight: bold;
-  font-size: 17px;
+  font-size: em(17);
   color: $black;
 }
 
@@ -36,6 +32,77 @@
   align-items: center;
   width: 50px;
   height: 50px;
-
   fill: $lightgreen;
+}
+
+@include tablet {
+  .about-us {
+    padding: 0 50px;
+  }
+
+  .about-us__title {
+    margin-bottom: 40px;
+    font-size: em(43);
+
+    &::before {
+      background: url("../img/bg_zigzag-tablet.svg") repeat;
+      width: 100%;
+      height: 15px;
+    }
+  }
+
+  .benefits {
+    list-style-position: inside;
+    -moz-column-count: 2;
+
+    /* Firefox */
+    -webkit-column-count: 2;
+
+    /* Safari and Chrome */
+    column-count: 2;
+  }
+
+  .benefits__item {
+    font-size: em(20);
+    margin-bottom: 60px;
+  }
+
+  .benefits__icon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@include desktop {
+  .about-us {
+    padding: 0 225px;
+    margin-bottom: 80px;
+  }
+
+  .about-us__title {
+    margin-bottom: 40px;
+    font-size: em(53);
+  }
+
+  .benefits {
+    list-style-position: inside;
+    -moz-column-count: 2;
+
+    /* Firefox */
+    -webkit-column-count: 2;
+
+    /* Safari and Chrome */
+    column-count: 2;
+  }
+
+  .benefits__item {
+    font-size: em(20);
+    margin-bottom: 60px;
+  }
+
+  .benefits__icon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

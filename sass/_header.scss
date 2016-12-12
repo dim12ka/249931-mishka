@@ -16,11 +16,22 @@
 
     @include tablet {
       display: inline-block;
+      background: url("../img/logo-tablet.svg") no-repeat left center;
+      width: 113px;
+      height: 46px;
+    }
+
+
+    @include desktop {
+      background: url("../img/logo-desktop.svg") center center no-repeat;
+      width: 149px;
+      height: 72px;
     }
 
 
     &:hover {
       opacity: 0.6;
+      fill: $lightgreen;
     }
   }
 }
@@ -81,7 +92,7 @@
     padding-bottom: 34px;
     padding-left: 75px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: em(17);
     font-family: $body-font;
     color: $black;
     text-decoration: none;
@@ -140,29 +151,29 @@
     width: auto;
     right: 0;
     left: 0;
-    padding: 0 36px;
+    padding: 0 31px;
     font-weight: bold;
-    font-size: 27px;
+    font-size: em(27);
     font-family: $body-font;
     text-align: center;
 
     @include tablet {
       top: 145px;
-      font-size: 43px;
+      font-size: em(43);
       padding: 0 36px;
     }
 
 
     @include desktop {
       top: 130px;
-      font-size: 53px;
+      font-size: em(53);
     }
   }
 }
 
 .item-box {
   position: relative;
-  margin-bottom: 0 30px 30px;
+  margin-bottom: 30px;
 
   &__link {
     position: relative;
@@ -171,7 +182,7 @@
     width: 100%;
     padding: 30px;
     font-weight: bold;
-    font-size: 19px;
+    font-size: em(19);
     font-family: $body-font;
     color: $white;
     text-decoration: none;
@@ -216,19 +227,27 @@
 }
 
 @include tablet {
+  .page-title::after {
+    position: relative;
+    content: "";
+    display: block;
+    background: url("../img/zig-zac_tablet.svg") repeat;
+    height: 22px;
+    margin-bottom: em(50);
+  }
+
   .item-box {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 100%;
+    padding: 0 50px;
 
-    @include container;
-
-    .item-box__link {
-      display: inline-block;
+    &__link {
+      padding: em(30) em(36);
+      line-height: em(27);
 
       &--interior {
         float: left;
@@ -245,19 +264,27 @@
 
 
 @include desktop {
+  .page-title::after {
+    position: relative;
+    content: "";
+    display: block;
+    background: url("../img/zig-zac_tablet.svg") repeat;
+    height: 22px;
+    margin-bottom: em(50);
+  }
+
   .item-box {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 100%;
-
-    @include container;
+    padding: 0 50px;
 
     .item-box__link {
-      display: inline-block;
+      padding: em(30) em(35);
+      line-height: em(27);
 
       &--interior {
         float: left;
