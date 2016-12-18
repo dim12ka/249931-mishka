@@ -1,0 +1,67 @@
+.howto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 30px;
+  border: 1px solid $border;
+}
+
+.howto__title {
+  display: flex;
+  padding: 0 35px 0 95px;
+  position: relative;
+  font-size: em(17);
+  line-height: em(24);
+  margin-bottom: 26px;
+
+  &::before {
+    display: flex;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    bottom: 0;
+    margin-top: -16px;
+    content: "";
+    background: url("../img/icon-video.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.howto__img {
+  display: flex;
+  position: relative;
+  background: url("../img/video-mobile@1x.jpg") no-repeat;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 34px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../img/icon-play.svg");
+    width: 101px;
+    height: 77px;
+  }
+}
+
+.howto__text {
+  padding: 0 35px;
+  color: $text-color;
+  font-size: em(13);
+  margin-bottom: 29px;
+}
+
+.howto__button {
+  margin: 0 35px;
+  text-decoration: none;
+  color: $text-color;
+  margin-bottom: 33px;
+}

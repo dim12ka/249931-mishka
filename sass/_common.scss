@@ -3,8 +3,6 @@ body {
   font-family: $body-font;
   color: $text-color;
   transition: all 0.2s linear;
-  min-width: $mobile-width;
-  max-width: $desktop-width;
   margin: 0 auto;
 }
 
@@ -18,8 +16,6 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0;
-  padding: 0;
   font-weight: bold;
   font-family: $body-font;
   color: $black;
@@ -45,9 +41,6 @@ h4 {
   border: 2px solid $text-color;
   cursor: pointer;
   text-transform: uppercase;
-}
-
-button {
   margin: 30 auto;
   padding: 0;
 }
@@ -59,7 +52,23 @@ button {
   text-decoration: none;
 }
 
+.button__icon {
+  display: inline-block;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .content {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
   @include clearfix;
 }
 

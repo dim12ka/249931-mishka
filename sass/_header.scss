@@ -120,6 +120,7 @@
   }
 
   &__bg-image {
+    position: relative;
     display: block;
     height: 294px;
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -157,16 +158,35 @@
     font-family: $body-font;
     text-align: center;
 
+    &--content {
+      font-size: em(27);
+      margin: 0;
+      position: relative;
+      top: 0;
+      padding: 72px 0;
+    }
+
     @include tablet {
       top: 145px;
       font-size: em(43);
-      padding: 0 36px;
+      padding: 0 50px;
+
+      &--content {
+        position: relative;
+        padding: 50px;
+        top: 0;
+      }
     }
 
 
     @include desktop {
       top: 130px;
       font-size: em(53);
+
+      &--content {
+        position: relative;
+        top: 0;
+      }
     }
   }
 }
