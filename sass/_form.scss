@@ -1,0 +1,388 @@
+.form {
+  padding: 0 30px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.form__description {
+  font-size: em(13);
+  margin-bottom: 25px;
+  line-height: 25px;
+
+  @include tablet {
+    font-size: em(17);
+    padding: 0 50px;
+  }
+
+
+  @include desktop {
+    padding: 0 225px;
+    line-height: em(30);
+  }
+}
+
+.form-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  @include tablet {
+    padding: 60px 50px;
+    padding-bottom: 40px;
+    display: flex;
+  }
+
+
+  @include desktop {
+    padding: 50px 110px;
+    padding-bottom: 0;
+  }
+}
+
+.form-group__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: em(17);
+  line-height: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  color: $lightgreen;
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 62px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $lightgreen;
+  }
+}
+
+.form-field__label {
+  font-size: em(17);
+  position: relative;
+  line-height: 20px;
+  font-weight: bold;
+  display: inline-flex;
+  padding-left: 62px;
+  margin-bottom: 42px;
+
+  @include tablet {
+    font-size: em(19);
+    line-height: em(52);
+    margin-bottom: 24px;
+  }
+
+
+  @include desktop {
+    padding-right: 30px;
+  }
+
+
+  &--radio {
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border: 2px solid $black;
+      border-radius: 50%;
+
+      @include tablet {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+
+  &--checkbox {
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border: 2px solid $black;
+
+      @include tablet {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  }
+}
+
+.form-field__radio,
+.form-field__checkbox {
+  display: none;
+}
+
+.form-field__radio:checked + .form-field__label--radio::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $lightgreen;
+
+  @include tablet {
+    width: 22px;
+    height: 22px;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+.form-field__checkbox:checked + .form-field__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  width: 33px;
+  height: 23px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 82%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet {
+    top: 10px;
+    left: 12px;
+    background-size: 100%;
+  }
+}
+
+.form-field__label--fullname {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0;
+
+  @include tablet {
+    padding-right: 23px;
+  }
+}
+
+.form-field__text {
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 18px 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $black;
+  font-size: em(17);
+  line-height: 19px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+
+
+  &::placeholder {
+    color: #c7c7c7;
+    font-weight: normal;
+  }
+}
+
+.form-field--fullname {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 11px;
+  right: 8px;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    width: 25px;
+    height: 24px;
+    opacity: 0.20;
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    width: 32px;
+    height: 32px;
+    opacity: 0.20;
+  }
+}
+
+.form-field--with-icon {
+  position: relative;
+
+  @include tablet {
+    flex-basis: 100%;
+    background-color: transparent;
+  }
+}
+
+.form-field__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  min-height: 149px;
+  padding: 16px;
+  border: 2px solid $black;
+  outline: none;
+  resize: none;
+  font-size: 17px;
+  line-height: 19px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+
+
+  &::placeholder {
+    color: #black;
+  }
+}
+
+.form__tip {
+  font-size: em(14);
+  margin-bottom: 31px;
+
+  @include tablet {
+    justify-content: flex-end;
+    font-size: em(17);
+    line-height: 20px;
+  }
+
+
+  @include desktop {
+    line-height: 0;
+  }
+}
+
+.form__button {
+  @include button;
+
+  width: 100%;
+
+  @include tablet {
+    order: -1;
+    flex-basis: 230px;
+  }
+}
+
+@include tablet {
+  .form-group:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+}
+
+
+@include tablet {
+  .form-group__title {
+    margin-top: 20px;
+    flex: 0 0 166px;
+    align-self: auto;
+
+    @include desktop {
+      flex: 0 0 115px;
+    }
+
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-group__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-field--checkbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    margin-bottom: 22px;
+
+    @include desktop {
+      flex-basis: 33%;
+      padding-bottom: 0;
+    }
+  }
+
+  .form-field--radio {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .form-group__fullname {
+    flex-basis: 100%;
+
+    @include desktop {
+      padding-right: 115px;
+    }
+  }
+
+  .form-field--fullname {
+    flex-wrap: nowrap;
+  }
+
+  .form-group--contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-field--phone,
+  .form-field--email {
+    display: flex;
+    flex-basis: 100%;
+
+    @include desktop {
+      padding-right: 115px;
+    }
+  }
+
+  .form-field--textarea {
+    flex-basis: 100%;
+
+    @include desktop {
+      padding-right: 115px;
+    }
+  }
+
+  .form-footer {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+
+    @include desktop {
+      padding: 0 225px;
+    }
+  }
+}
+
+
+input {
+  background-color: transparent;
+
+  &::placeholder {
+    font-weight: normal;
+    font-family: $body-font;
+    color: e5e5e5;
+    font-size: em(19);
+  }
+}

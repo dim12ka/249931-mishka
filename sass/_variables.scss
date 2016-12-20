@@ -1,27 +1,35 @@
-$text-color: #444;
-$font-size: 15;
+$text-color: #444444;
 $body-font: "OpenSans", Arial, sans-serif;
-$black: #000;
-$white: #fff;
+$black: #000000;
+$white: #ffffff;
 $lightgreen: #63d1bb;
 $darkgreen: #56c3b2;
+$lightgray: #a8a8a8;
+$darkgray: #ececec;
+$text-review: #767676;
+$footercolor: #f1f1f1;
+$border: #ededed;
 
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
+$browser-context: 16;
 
-@font-face {
-  font-family: "OpenSans";
-  font-weight: normal;
-  font-style: normal;
-
-  src: url("../fonts/opensans.woff") format("woff"),
-  url("../fonts/opensans.woff2") format("woff2");
+@function em($pixels, $context: $browser-context) {
+  @return $pixels / $context * 1em;
 }
 
 @font-face {
+  font-weight: normal;
   font-family: "OpenSans";
-  font-weight: bold;
   font-style: normal;
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
 
-  src: url("../fonts/opensansbold.woff") format("woff"),
-  url("../fonts/opensansbold.woff2") format("woff2");
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
 }

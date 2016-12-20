@@ -1,0 +1,53 @@
+body {
+  font-size: em(15);
+  font-family: $body-font;
+  color: $text-color;
+  transition: all 0.2s linear;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  font-family: $body-font;
+  color: $black;
+}
+
+h3 {
+  font-size: em(25);
+}
+
+h4 {
+  font-size: em(18);
+}
+
+.button__write-review,
+.product-card__button {
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button__icon {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @include clearfix;
+}
+
+.hidden {
+  display: none;
+}

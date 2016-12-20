@@ -1,0 +1,190 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__headline {
+  padding: 45px 30px 40px;
+
+  &::before {
+    @include zigzag;
+
+    top: 0;
+  }
+}
+
+.contact-list {
+  padding: 0 30px;
+
+  @include no-list;
+}
+
+.contact-list__item {
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+
+.contact-list__type {
+  display: inline-block;
+  width: 76px;
+  vertical-align: top;
+}
+
+.contact-list__address {
+  display: inline-block;
+  margin: 0;
+}
+
+.contact-list__email {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid $lightgreen;
+}
+
+.contact__map {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+  position: relative;
+  background-image: url("../img/map-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 457px;
+  min-width: $mobile-width;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url("../img/icon-map-pin.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.contact__button {
+  @include button;
+
+  margin: 0 auto;
+  min-width: 260px;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+
+@include tablet {
+  .contacts__headline {
+    position: relative;
+    font-size: em(43);
+    padding: 80px 50px;
+
+    &::before {
+      content: "";
+      background: url("../img/bg_zigzag-tablet.svg") repeat;
+      width: 100%;
+      height: 15px;
+    }
+
+    &::after {
+      content: "";
+      right: 0;
+      top: 0;
+      margin: auto;
+      bottom: 0;
+      position: absolute;
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+    }
+  }
+
+  .contact-list {
+    padding: 0 50px;
+  }
+
+  .contact-list__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: em(17);
+    margin-right: 50px;
+  }
+
+  .contact__map {
+    position: relative;
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 460px;
+  }
+
+  .contact__button {
+    margin: 0 auto;
+    min-width: 230px;
+    margin-bottom: 40px;
+  }
+}
+
+
+@include desktop {
+  .contacts__headline {
+    position: relative;
+    font-size: em(53);
+    padding: 80px 225px;
+
+    &::before {
+      content: "";
+      background: url("../img/bg_zigzag-tablet.svg") repeat;
+      width: 100%;
+      height: 15px;
+    }
+
+    &::after {
+      content: "";
+      left: 0;
+      top: 0;
+      margin: auto;
+      bottom: 0;
+      position: absolute;
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+    }
+  }
+
+  .contact-list {
+    display: block;
+    padding: 0 225px;
+  }
+
+  .contact-list__item {
+    padding: 0;
+    vertical-align: top;
+    font-size: em(17);
+  }
+
+  .contact__map {
+    float: right;
+    position: relative;
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 525px;
+    height: 454px;
+    margin-top: -320px;
+    margin-right: 50px;
+  }
+
+  .contact__button {
+    margin: 0 auto;
+    float: left;
+    min-width: 230px;
+    margin-left: 225px;
+    margin-top: -85px;
+    margin-bottom: 40px;
+    clear: both;
+  }
+}

@@ -1,0 +1,84 @@
+.footer {
+  position: relative;
+  background-color: $footercolor;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 53px;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    height: 1px;
+    margin-left: -130px;
+    background: #e5e5e5;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.social {
+  @include no-list;
+
+  padding: 24px 0;
+  vertical-align: middle;
+  text-align: center;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.social__list {
+  display: inline-block;
+
+  & + li {
+    margin-left: 30px;
+  }
+}
+
+.copyright {
+  padding: 21px 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.copyright__title {
+  font-weight: bold;
+  font-size: em(19);
+  color: $black;
+}
+
+.copyright__icon {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+  fill: $lightgreen;
+}
+
+@include tablet {
+  .footer {
+    &::before {
+      content: "";
+      background: url("../img/logo__footer.svg") no-repeat;
+      width: 102px;
+      height: 34px;
+    }
+  }
+}
