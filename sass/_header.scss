@@ -137,12 +137,9 @@
 
 
     @include desktop {
-      display: block;
       background-image: url("../img/hero-desktop.jpg");
       height: 746px;
       width: 100%;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
     }
   }
 
@@ -253,7 +250,7 @@
     display: block;
     background: url("../img/zig-zac_tablet.svg") repeat;
     height: 22px;
-    margin-bottom: em(50);
+    margin-bottom: 50px;
   }
 
   .item-box {
@@ -266,7 +263,7 @@
     padding: 0 50px;
 
     &__link {
-      padding: em(30) em(36);
+      padding: 30px 36px;
       line-height: em(27);
 
       &--interior {
@@ -290,7 +287,7 @@
     display: block;
     background: url("../img/zig-zac_tablet.svg") repeat;
     height: 22px;
-    margin-bottom: em(50);
+    margin-bottom: 50px;
   }
 
   .item-box {
@@ -303,7 +300,7 @@
     padding: 0 50px;
 
     .item-box__link {
-      padding: em(30) em(35);
+      padding: 30px 35px;
       line-height: em(27);
 
       &--interior {

@@ -2,6 +2,13 @@
   position: relative;
   background-color: $footercolor;
 
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 53px;
+  }
+
+
   &::after {
     content: "";
     position: absolute;
@@ -11,6 +18,10 @@
     height: 1px;
     margin-left: -130px;
     background: #e5e5e5;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -20,6 +31,10 @@
   padding: 24px 0;
   vertical-align: middle;
   text-align: center;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .social__list {
@@ -33,6 +48,10 @@
 .copyright {
   padding: 21px 0;
   text-align: center;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -55,55 +74,11 @@
 
 @include tablet {
   .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 50px 53px;
-
     &::before {
       content: "";
       background: url("../img/logo__footer.svg") no-repeat;
       width: 102px;
       height: 34px;
-    }
-
-    &::after {
-      display: none;
-    }
-
-    .social {
-      padding: 0;
-    }
-
-    .copyright {
-      padding: 0;
-    }
-  }
-}
-
-
-@include desktop {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 50px 53px;
-
-    &::before {
-      content: "";
-      background: url("../img/logo__footer.svg") no-repeat;
-      width: 102px;
-      height: 34px;
-    }
-
-    &::after {
-      display: none;
-    }
-
-    .social {
-      padding: 0;
-    }
-
-    .copyright {
-      padding: 0;
     }
   }
 }

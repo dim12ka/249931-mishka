@@ -1,5 +1,11 @@
-@mixin tablet {
+@mixin tablet-only {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
@@ -56,4 +62,28 @@
   width: 100%;
   height: 7px;
   background: url("../img/zigzag-line-desktop.png") repeat;
+}
+
+@mixin button {
+  padding: 16px;
+  border: 2px solid $black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $text-color;
+  background-color: $white;
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: inset 0 0 0 0 $text-color;
+  transition: all ease 0.6s;
+  border-radius: 1px;
+
+  &:hover {
+    box-shadow: inset 0 100px 0 0 $text-color;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
