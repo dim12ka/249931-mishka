@@ -21,34 +21,32 @@
 }
 
 .reviews__controls {
-  @include clearfix;
-
+  display: flex;
   margin-top: 30px;
 }
 
 .button__control {
   position: relative;
-  display: inline-block;
   width: 50%;
   margin-bottom: 40px;
   background-color: transparent;
   border: 1px solid $darkgray;
 
   &--left {
-    display: inline-block;
-    float: left;
+    display: flex;
     background: url("../img/icon-left-arrow.svg") no-repeat;
     background-position: 50% 50%;
   }
 
   &--right {
-    float: right;
     background: url("../img/icon-right-arrow.svg") no-repeat;
     background-position: 50% 50%;
   }
 }
 
 .button__write-review {
+  @include button;
+
   clear: both;
   margin-bottom: 40px;
 }
@@ -86,22 +84,12 @@
 
   .reviews__controls {
     margin-top: -47px;
-    float: right;
   }
 
   .button__control {
     margin: 0;
     border: none;
     width: 80px;
-    float: right;
-
-    &--left {
-      float: none;
-    }
-
-    &--right {
-      float: none;
-    }
   }
 
   .button__write-review {
@@ -128,8 +116,6 @@
     font-size: em(43);
   }
 
-  .slider-review__container {}
-
   .slider-review__text {
     color: $text-color;
     margin-bottom: 30px;
@@ -147,6 +133,7 @@
   }
 
   .button__control {
+    display: block;
     margin: 0;
     border: none;
     width: 80px;
@@ -159,9 +146,5 @@
     &--right {
       float: none;
     }
-  }
-
-  .button__write-review {
-    margin-top: -300px;
   }
 }

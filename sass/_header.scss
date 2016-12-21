@@ -128,6 +128,11 @@
         border-left: 0;
         flex-basis: 238px;
       }
+
+
+      @include desktop {
+        flex-basis: 184px;
+      }
     }
 
     &--order {
@@ -140,9 +145,12 @@
     &--logo {
       @include desktop {
         border: 0;
-        padding-left: 20px;
-        padding-right: 100px;
+        flex-basis: 280px;
       }
+    }
+
+    &--cart {
+      flex-basis: 327px;
     }
 
     &--catalog,
@@ -208,7 +216,7 @@
 
 .menu__link--cart {
   @include tablet {
-    width: 267px;
+    flex-basis: 277px;
   }
 }
 
@@ -222,6 +230,27 @@
   @include tablet {
     padding: 0 50px;
     display: flex;
+  }
+}
+
+.sub-menu__item {
+  &--new,
+  &--sale {
+    @include tablet {
+      display: none;
+    }
+
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &--order,
+  &--catalog {
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -325,8 +354,22 @@
 }
 
 .item-box {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
 
   &__link {
     position: relative;
@@ -340,6 +383,14 @@
     color: $white;
     text-decoration: none;
 
+    @include tablet {
+      &__link {
+        padding: 30px 35px;
+        line-height: em(27);
+      }
+    }
+
+
     &:hover {
       padding: 35px 30px;
       opacity: 0.9;
@@ -347,11 +398,18 @@
 
     &--interior {
       background-color: $lightgreen;
+
+      @include tablet {
+        width: 50%;
+      }
     }
 
     &--games {
-      display: block;
       background-color: $darkgreen;
+
+      @include tablet {
+        width: 50%;
+      }
     }
   }
 
@@ -388,31 +446,6 @@
     height: 22px;
     margin-bottom: 50px;
   }
-
-  .item-box {
-    position: absolute;
-    content: "";
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0 50px;
-
-    &__link {
-      padding: 30px 36px;
-      line-height: em(27);
-
-      &--interior {
-        float: left;
-        width: 50%;
-      }
-
-      &--games {
-        float: right;
-        width: 50%;
-      }
-    }
-  }
 }
 
 
@@ -424,30 +457,5 @@
     background: url("../img/zig-zac_tablet.svg") repeat;
     height: 22px;
     margin-bottom: 50px;
-  }
-
-  .item-box {
-    position: absolute;
-    content: "";
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0 50px;
-
-    .item-box__link {
-      padding: 30px 35px;
-      line-height: em(27);
-
-      &--interior {
-        float: left;
-        width: 50%;
-      }
-
-      &--games {
-        float: right;
-        width: 50%;
-      }
-    }
   }
 }
