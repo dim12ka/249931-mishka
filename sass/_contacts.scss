@@ -1,9 +1,15 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   position: relative;
 }
 
 .contacts__headline {
-  padding: 45px 30px 40px;
+  flex: 1 1 100%;
+  padding: 30px;
+  font-size: em(18);
+  margin: 0;
 
   &::before {
     @include zigzag;
