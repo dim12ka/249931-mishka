@@ -1,7 +1,40 @@
 .reviews {
-  @include clearfix;
-
+  position: relative;
   padding: 0 30px;
+
+  @include tablet {
+    padding: 0 50px;
+    box-sizing: border-box;
+    padding: 80px 50px;
+    background-image: url("../img/bg_review.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 457px;
+    margin-bottom: 40px;
+  }
+
+
+  @include desktop {
+    width: auto;
+    margin-left: 50px;
+    padding: 80px 50px 0 225px;
+    background-image: url("../img/bg_review.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__headline {
+  @include tablet {
+    margin-top: 0;
+    font-size: em(43);
+  }
+
+
+  @include desktop {
+    font-size: em(53);
+  }
 }
 
 .slider-review__text {
@@ -23,11 +56,18 @@
 .reviews__controls {
   display: flex;
   margin-top: 30px;
+  flex-wrap: wrap;
+  align-content: stretch;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
 }
 
 .button__control {
-  position: relative;
+  padding: 16px;
   width: 50%;
+  height: 52px;
   margin-bottom: 40px;
   background-color: transparent;
   border: 1px solid $darkgray;
@@ -47,30 +87,22 @@
 .button__write-review {
   @include button;
 
-  clear: both;
+  text-align: center;
+  flex-basis: 100%;
   margin-bottom: 40px;
+
+  @include tablet {
+    position: absolute;
+    top: 80px;
+    width: 175px;
+    box-sizing: border-box;
+  }
+
+
+  @include desktop {}
 }
 
 @include tablet {
-  .reviews {
-    box-sizing: border-box;
-    padding: 0 50px;
-    background-image: url("../img/bg_review.jpg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 457px;
-    margin-bottom: 40px;
-  }
-
-  .reviews__headline {
-    margin-top: 80px;
-    margin-bottom: 60px;
-    font-size: em(43);
-  }
-
-  .slider-review__container {}
-
   .slider-review__text {
     color: $text-color;
     margin-bottom: 30px;
@@ -89,33 +121,12 @@
   .button__control {
     margin: 0;
     border: none;
-    width: 80px;
-  }
-
-  .button__write-review {
-    margin-top: -300px;
+    width: 87px;
   }
 }
 
 
 @include desktop {
-  .reviews {
-    box-sizing: border-box;
-    margin-left: 50px;
-    padding: 0 50px 0 175px;
-    background-image: url("../img/bg_review.jpg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    height: 457px;
-    margin-bottom: 40px;
-  }
-
-  .reviews__headline {
-    margin-top: 80px;
-    margin-bottom: 60px;
-    font-size: em(43);
-  }
-
   .slider-review__text {
     color: $text-color;
     margin-bottom: 30px;
@@ -129,22 +140,11 @@
 
   .reviews__controls {
     margin-top: -47px;
-    float: right;
   }
 
   .button__control {
-    display: block;
+    display: flex;
     margin: 0;
     border: none;
-    width: 80px;
-    float: right;
-
-    &--left {
-      float: none;
-    }
-
-    &--right {
-      float: none;
-    }
   }
 }
