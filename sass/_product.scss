@@ -56,6 +56,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
+  text-decoration: none;
+  color: $black;
+
+  @include tablet {
+    font-size: em(20);
+  }
 }
 
 .product-detail__features {
@@ -78,4 +84,10 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  text-decoration: none;
+  color: $black;
+
+  @include tablet {
+    font-size: em(17);
+  }
 }
