@@ -17,7 +17,9 @@
 
 
   @include desktop {
-    padding: 0 50px;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
     justify-content: space-between;
   }
 }
@@ -275,14 +277,7 @@
   position: relative;
   margin-bottom: 0;
   background-color: #f9f9f9;
-
-  &::before {
-    content: "";
-    display: block;
-    width: auto;
-    height: 1px;
-    background-color: $darkgray;
-  }
+  border: 1px solid $darkgray;
 
   &__bg-image {
     position: relative;
