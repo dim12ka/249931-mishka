@@ -31,6 +31,13 @@ h4 {
   font-size: em(18);
 }
 
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .button__write-review,
 .product-card__button {
   color: $text-color;
@@ -46,11 +53,6 @@ h4 {
   opacity: 0.2;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-
-.content {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .hidden {

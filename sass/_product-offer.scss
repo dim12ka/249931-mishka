@@ -1,11 +1,8 @@
 .product-offer {
-  min-width: 260px;
   padding: 0 30px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: stretch;
 
   @include tablet {
     padding: 0 50px;
@@ -116,6 +113,8 @@
 }
 
 .product-offer-footer {
+  width: 100%;
+
   @include tablet {
     width: 44%;
     margin-top: -125px;
