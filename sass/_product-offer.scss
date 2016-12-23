@@ -12,6 +12,14 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 225px;
+  }
 }
 
 .product-offer-headline {
@@ -20,6 +28,11 @@
   @include tablet {
     display: flex;
     align-items: center;
+  }
+
+
+  @include desktop {
+    position: relatative;
   }
 }
 
@@ -48,17 +61,36 @@
   @include tablet {
     flex-basis: 50%;
   }
+
+
+  @include desktop {
+    flex-basis: 325px;
+  }
 }
 
 .product-offer__text {
-  width: 88%;
+  @include tablet {
+    width: 88%;
+  }
+
+
+  @include desktop {
+    width: 292px;
+  }
 }
 
 .product-offer-feature {
   @include no-list;
 
-  width: 88%;
-  margin-bottom: 30px;
+  @include tablet {
+    width: 88%;
+    margin-bottom: 30px;
+  }
+
+
+  @include desktop {
+    width: 292px;
+  }
 }
 
 .feature__item {
@@ -76,12 +108,23 @@
     flex-basis: 50%;
     height: 405px;
   }
+
+
+  @include desktop {
+    flex-basis: 525px;
+  }
 }
 
 .product-offer-footer {
   @include tablet {
     width: 44%;
     margin-top: -125px;
+  }
+
+
+  @include desktop {
+    flex-basis: 325px;
+    margin-top: 120px;
   }
 }
 
@@ -102,4 +145,8 @@
   @include button;
 
   margin-bottom: 70px;
+
+  @include desktop {
+    width: 292px;
+  }
 }
