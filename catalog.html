@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Каталог мишка</title>
+  </head>
+
+  <body>
     <header class="header">
       <div class="header-top">
-        <div class="header-top__logo"></div>
+        <a class="header-top__logo" href="/">Мишка</a>
         <nav class="header-top__menu">
           <button class="btn-menu" type="button">
             <span></span>
@@ -79,31 +83,34 @@
         </nav>
       </div>
       <div class="page-title page-title--no-banner">
-        <div class="sub-menu">
-          <ul class="sub-menu-list">
-            <li class="sub-menu__item sub-menu__item--catalog">
-              <a href="#" class="sub-menu__link">
-                <span class="sub-menu__link-title sub-menu__link-title--catalog">Каталог товаров</span>
-              </a>
-            </li>
-            <li class="sub-menu__item sub-menu__item--order">
-              <a href="#" class="sub-menu__link sub-menu__link--order">
-                <span class="sub-menu__link-title sub-menu__link-title--order">Вязание на заказ</span>
-              </a>
-            </li>
-            <li class="sub-menu__item sub-menu__item--new">
-              <a href="#" class="sub-menu__link sub-menu__link--new">
-                <span class="sub-menu__link-title sub-menu__link-title--new">Новые поступления</span>
-              </a>
-            </li>
-            <li class="sub-menu__item sub-menu__item--sale">
-              <a href="#" class="sub-menu__link sub-menu__link--sale">
-                <span class="sub-menu__link-title sub-menu__link-title--sale">Распродажа</span>
-              </a>
-            </li>
+        <div class="wrapper">
+          <div class="sub-menu">
+            <ul class="sub-menu-list">
+              <li class="sub-menu__item sub-menu__item--catalog">
+                <a href="#" class="sub-menu__link">
+                  <span class="sub-menu__link-title sub-menu__link-title--catalog">Каталог товаров</span>
+                </a>
+              </li>
+              <li class="sub-menu__item sub-menu__item--order">
+                <a href="#" class="sub-menu__link sub-menu__link--order">
+                  <span class="sub-menu__link-title sub-menu__link-title--order">Вязание на заказ</span>
+                </a>
+              </li>
+              <li class="sub-menu__item sub-menu__item--new">
+                <a href="#" class="sub-menu__link sub-menu__link--new">
+                  <span class="sub-menu__link-title sub-menu__link-title--new">Новые поступления</span>
+                </a>
+              </li>
+              <li class="sub-menu__item sub-menu__item--sale">
+                <a href="#" class="sub-menu__link sub-menu__link--sale">
+                  <span class="sub-menu__link-title sub-menu__link-title--sale">Распродажа</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <h1 class="page-title__text page-title__text--content">Каталог товаров</h1>
         </div>
+      </div>
       </header>
       <main class="content">
         <div class="products-list">
@@ -296,5 +303,4 @@
         <button class="popup__button-add button" type="button">Добавить</button>
       </div>
     </body>
-
   </html>

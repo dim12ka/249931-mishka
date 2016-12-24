@@ -4,6 +4,14 @@
   background: $white;
 }
 
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
 .header-top {
   padding: 22px 30px;
   display: flex;
@@ -296,13 +304,11 @@
     background-position: 50% 50%;
   }
 
-
   @include desktop {
     background-image: url("../img/hero-desktop@1x.jpg");
     height: 746px;
     width: 100%;
   }
-
 
   &::after {
     @include tablet {
@@ -342,6 +348,23 @@
       margin-bottom: 192px;
       font-size: em(53);
       height: em(88.8);
+    }
+  }
+
+  &--no-banner {
+    background: #f9f9f9;
+    height: auto;
+
+    .page-title__text {
+      margin-bottom: 90px;
+      height: auto;
+    }
+
+    .wrapper {
+
+      @include desktop {
+        min-width: 1050px;
+      }
     }
   }
 
@@ -423,11 +446,4 @@
       line-height: 30px;
     }
   }
-}
-
-.wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
