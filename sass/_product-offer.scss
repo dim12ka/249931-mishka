@@ -1,11 +1,8 @@
 .product-offer {
-  min-width: 260px;
   padding: 0 30px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: stretch;
 
   @include tablet {
     padding: 0 50px;
@@ -32,7 +29,7 @@
 
 
   @include desktop {
-    position: relatative;
+    position: relative;
   }
 }
 
@@ -43,6 +40,12 @@
   @include tablet {
     flex-basis: 80%;
     font-size: em(43);
+  }
+
+
+  @include desktop {
+    position: absolute;
+    font-size: em(53);
   }
 }
 
@@ -65,12 +68,15 @@
 
   @include desktop {
     flex-basis: 325px;
+    align-self: flex-end;
   }
 }
 
 .product-offer__text {
   @include tablet {
+    margin-top: 0;
     width: 88%;
+    margin-bottom: 50px;
   }
 
 
@@ -82,20 +88,23 @@
 .product-offer-feature {
   @include no-list;
 
+  margin-bottom: 38px;
+
   @include tablet {
     width: 88%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
 
   @include desktop {
+    margin-bottom: 30px;
     width: 292px;
   }
 }
 
 .feature__item {
   display: flex;
-  line-height: em(40);
+  line-height: 40px;
   border-bottom: 1px solid $darkgray;
 }
 
@@ -116,9 +125,11 @@
 }
 
 .product-offer-footer {
+  width: 100%;
+
   @include tablet {
     width: 44%;
-    margin-top: -125px;
+    margin-top: -110px;
   }
 
 
@@ -129,12 +140,18 @@
 }
 
 .product-offer__price {
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-size: em(17);
   line-height: em(24);
   font-weight: bold;
   text-align: center;
   color: $text-color;
+
+  @include tablet {
+    font-size: em(20);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .product-offer__button {
