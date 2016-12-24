@@ -23,16 +23,16 @@
 }
 
 @mixin container {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
 
   @include tablet {
-    width: 668px;
+    width: 768px;
   }
 
 
   @include desktop {
-    width: 1050px;
+    width: 1150px;
   }
 }
 

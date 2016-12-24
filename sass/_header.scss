@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   position: relative;
   background: $white;
 }
@@ -345,7 +346,6 @@
   }
 
   .item-box {
-    min-width: 320px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -423,4 +423,11 @@
       line-height: 30px;
     }
   }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
