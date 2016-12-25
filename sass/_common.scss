@@ -8,7 +8,7 @@ body {
 
 .wrapper {
   min-width: 260px;
-  max-width: 1150px;
+  max-width: 1050px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -46,8 +46,25 @@ h4 {
   opacity: 0.2;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  &::hover {
+    fill: $lightgreen;
+  }
 }
 
 .hidden {
   display: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.contact-list__email:hover {
+  color: $lightgreen;
+  opacity: none;
+}
+
+.item-box {
+  opacity: .9;
 }

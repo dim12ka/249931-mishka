@@ -19,7 +19,9 @@
 
   @include desktop {
     padding: 0 225px;
-    line-height: em(30);
+    line-height: 1.875em;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +38,10 @@
 
 
   @include desktop {
-    padding: 50px 110px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 50px 113px 0;
     padding-bottom: 0;
   }
 }
@@ -88,6 +93,7 @@
 
   @include desktop {
     padding-right: 30px;
+    padding-left: 90px;
   }
 
 
