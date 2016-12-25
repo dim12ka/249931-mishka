@@ -25,7 +25,10 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -33,22 +36,12 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-gulp.task("csso", function () {
-  gulp
-    .src([
-      "css/**/*.css",
-      "!css/**/*.min.css"
-    ])
-    .pipe(csso())
-    .pipe(rename({
-      suffix: ".min"
-    }))
-    .pipe(gulp.dest("css"));
-});
-
 gulp.task("svg", function () {
   return gulp
-    .src("img/*.svg")
+    .src([
+      "img/**/*.svg",
+      "!img/img.svg"
+    ])
     .pipe(svgmin())
     .pipe(svgstore())
     .pipe(gulp.dest("img"));
@@ -75,7 +68,7 @@ gulp.task("imagemin", function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: ".",
+    server: "build",
     notify: false,
     open: true,
     cors: true,
@@ -83,18 +76,16 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("css/**/*.css", ["csso"]);
   gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("build", function() {
-  runSequence("clean", "style", "csso", "copy", "svgmin", "imagemin");
+  runSequence("clean", "style", "copy", "svgmin", "imagemin");
 });
 
 gulp.task("copy", function() {
   gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "css/**/*.min.css",
     "img/img.svg",
     "*.html"
   ], {
