@@ -31,10 +31,6 @@ h4 {
   font-size: em(18);
 }
 
-.content {
-  @include container;
-}
-
 .button__write-review,
 .product-card__button {
   color: $text-color;

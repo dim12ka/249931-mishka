@@ -369,8 +369,12 @@
     display: flex;
     justify-content: space-between;
 
-    @include desktop {
+    @include tablet {
       margin-bottom: 50px;
+    }
+
+
+    @include desktop {
       padding: 0 225px;
     }
   }

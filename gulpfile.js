@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
+var cssmin = require('gulp-cssmin');
+var del = require("del");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -21,6 +23,17 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
+});
+
+gulp.task("clean", function() {
+ return del("build");
+});
+
+gulp.task('cssmine', function () {
+    gulp.src('css/**/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('svg', function () {
@@ -38,8 +51,25 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
+});
+
+gulp.task("build", function() {
+  run("style", "cssmine");
+});
+
+  gulp.task("copy", function() {
+    return gulp.src([
+      "fonts/**/*.{woff,woff2}",
+      "img/**",
+      "js/**",
+      "*.html"
+    ], {
+      base: "."
+    })
+    .pipe(gulp.dest("build"));
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("css/**/*.css", ["cssmine"]);
   gulp.watch("*.html").on("change", server.reload);
 });
