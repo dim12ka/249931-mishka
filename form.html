@@ -21,10 +21,10 @@
                   <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
                   <img class="menu__logo" src="img/logo-mobile.svg" alt="Mishka">
                 </picture>
-                <button class="btn-menu" type="button">
-                  <span></span>
-                </button>
               </a>
+              <button class="btn-menu" type="button">
+                <span></span>
+              </button>
             </li>
           </ul>
 
@@ -41,7 +41,6 @@
                 <span class="top-menu__link-title top-menu__link-title--order">Вязание на заказ</span>
               </a>
             </li>
-
           </ul>
 
           <ul class="top-menu__list top-menu__list--right">
@@ -107,151 +106,145 @@
           <h1 class="page-title__text page-title__text--content">Вязание на заказ</h1>
         </div>
       </div>
-    </div>
-  </header>
-
-  <main class="content">
-
-    <form class="form" method="post" name="order">
-      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <div class="form-group">
-        <h2 class="form-group__title">Тип</h2>
-        <div class="form-group__radio">
-          <div class="form-field  form-field--radio">
-            <input class="form-field__radio" type="radio" name="type" id="accessory-interier" checked>
-            <label class="form-field__label form-field__label--radio" for="accessory-interier">
-              Аксессуары для интерьера
-            </label>
-          </div>
-          <div class="form-field  form-field--radio">
-            <input class="form-field__radio" type="radio" name="type" id="kids-toys">
-            <label class="form-field__label form-field__label--radio" for="kids-toys">Детская игрушка</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <h2 class=" form-group__title">Цвет</h2>
-        <div class="form-group__checkbox">
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="1">
-            <label class="form-field__label form-field__label--checkbox" for="1">Белый</label>
-          </div>
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="2">
-            <label class="form-field__label form-field__label--checkbox" for="2">Черный</label>
-          </div>
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="3">
-            <label class="form-field__label form-field__label--checkbox" for="3">Серый</label>
-          </div>
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="4">
-            <label class="form-field__label form-field__label--checkbox" for="4">Розовый</label>
-          </div>
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="5">
-            <label class="form-field__label form-field__label--checkbox" for="5">"Тиффани"</label>
-          </div>
-          <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="color" id="6">
-            <label class="form-field__label form-field__label--checkbox" for="6">Оранжевый</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <h2 class="form-group__title">ФИО</h2>
-        <div class="form-group__fullname">
-          <div class="form-field form-field--fullname">
-            <label class="form-field__label form-field__label--fullname" for="name">Имя:</label>
-            <input class="form-field__text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-          </div>
-          <div class="form-field form-field--fullname">
-            <label class="form-field__label form-field__label--fullname" for="surname">Фамилия:</label>
-            <input class="form-field__text" type="text" name="surname" id="surname" placeholder="Введите вашу Фамилию *">
-          </div>
-          <div class="form-field form-field--fullname">
-            <label class="form-field__label form-field__label--fullname" for="middle-name">Отчество:</label>
-            <input class="form-field__text" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group form-group--contacts">
-
-        <div class="form-field form-field--phone">
-          <h2 class="form-group__title">Тел</h2>
-          <div class="form-field form-field--with-icon">
-            <input class="form-field__text form-field__text--icon" type="tel" name="tel" placeholder="+7 XXX XX XX*">
-            <span class="form-field__icon form-field__icon--phone"></span>
+    </header>
+    <main class="content">
+      <form class="form" method="post" name="order">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="form-group">
+          <h2 class="form-group__title">Тип</h2>
+          <div class="form-group__radio">
+            <div class="form-field  form-field--radio">
+              <input class="form-field__radio" type="radio" name="type" id="accessory-interier" checked>
+              <label class="form-field__label form-field__label--radio" for="accessory-interier">
+                Аксессуары для интерьера
+              </label>
+            </div>
+            <div class="form-field  form-field--radio">
+              <input class="form-field__radio" type="radio" name="type" id="kids-toys">
+              <label class="form-field__label form-field__label--radio" for="kids-toys">Детская игрушка</label>
+            </div>
           </div>
         </div>
 
-        <div class="form-field form-field--email">
-          <h2 class="form-group__title">Email</h2>
-          <div class="form-field form-field--with-icon">
-            <input class="form-field__text form-field__text--icon" type="email" name="email" placeholder="Ваш Email*">
-            <span class="form-field__icon form-field__icon--email"></span>
+        <div class="form-group">
+          <h2 class=" form-group__title">Цвет</h2>
+          <div class="form-group__checkbox">
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color1">
+              <label class="form-field__label form-field__label--checkbox" for="color1">Белый</label>
+            </div>
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color2">
+              <label class="form-field__label form-field__label--checkbox" for="color2">Черный</label>
+            </div>
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color3">
+              <label class="form-field__label form-field__label--checkbox" for="color3">Серый</label>
+            </div>
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color4">
+              <label class="form-field__label form-field__label--checkbox" for="color4">Розовый</label>
+            </div>
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color5">
+              <label class="form-field__label form-field__label--checkbox" for="color5">"Тиффани"</label>
+            </div>
+            <div class="form-field form-field--checkbox">
+              <input class="form-field__checkbox" type="checkbox" name="color" id="color6">
+              <label class="form-field__label form-field__label--checkbox" for="color6">Оранжевый</label>
+            </div>
           </div>
         </div>
-      </div>
-    </fieldset>
 
-    <div class="form-group">
-      <h2 class="form-group__title">Доп</h2>
-      <div class="form-field form-field--textarea">
-        <textarea class="form-filed__text form-field__textarea" type="textarea" name="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      </div>
-    </div>
+        <div class="form-group">
+          <h2 class="form-group__title">ФИО</h2>
+          <div class="form-group__fullname">
+            <div class="form-field form-field--fullname">
+              <label class="form-field__label form-field__label--fullname" for="name">Имя:</label>
+              <input class="form-field__text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form-field form-field--fullname">
+              <label class="form-field__label form-field__label--fullname" for="surname">Фамилия:</label>
+              <input class="form-field__text" type="text" name="surname" id="surname" placeholder="Введите вашу Фамилию *">
+            </div>
+            <div class="form-field form-field--fullname">
+              <label class="form-field__label form-field__label--fullname" for="middle-name">Отчество:</label>
+              <input class="form-field__text" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </div>
 
-    <div class="form-footer">
-      <p class="form__tip">*Поля обязательны для заполнения</p>
-      <button class="form__button button" type="button">Отправить заказ</button>
-    </div>
-  </form>
-</div>
-</main>
-<footer class="footer">
-<ul class="social">
-  <li class="social__list">
-    <a href="#" class="social__list-link social__link--inst">
-      <span class="social__list-icon">
-        <svg width="22" height="22">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-insta"></use>
-        </svg>
-      </span>
-    </a>
-  </li>
-  <li class="social__list">
-    <a href="#" class="social__link social__link--fb">
-      <span class="social__list-icon">
-        <svg width="22" height="22">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-fb"></use>
-        </svg>
-      </span>
-    </a>
-  </li>
-  <li class="social__list">
-    <a href="#" class="social__link social__link--tw">
-      <span class="social__list-icon">
-        <svg width="22" height="22">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-twitter"></use>
-        </svg>
-      </span>
-    </a>
-  </li>
-</ul>
-<div class="copyright">
-  <a class="copyright__link" href="http://htmlacademy.ru">
-    <span class="copyright__title">Разработано</span>
-    <span class="copyright__icon">
-      <svg width="22" height="22">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#logo-htmlacademy"></use>
-      </svg>
-    </span>
-  </a>
-</div>
-</footer>
-</body>
+        <div class="form-group form-group--contacts">
+          <div class="form-field form-field--phone">
+            <h2 class="form-group__title">Тел</h2>
+            <div class="form-field form-field--with-icon">
+              <input class="form-field__text form-field__text--icon" type="text" name="tel" placeholder="+7 XXX XX XX*">
+              <span class="form-field__icon form-field__icon--phone"></span>
+            </div>
+          </div>
+
+          <div class="form-field form-field--email">
+            <h2 class="form-group__title">Email</h2>
+            <div class="form-field form-field--with-icon">
+              <input class="form-field__text form-field__text--icon" type="email" name="email" placeholder="Ваш Email*">
+              <span class="form-field__icon form-field__icon--email"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h2 class="form-group__title">Доп</h2>
+          <div class="form-field form-field--textarea">
+            <textarea class="form-filed__text form-field__textarea" name="more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <p class="form__tip">*Поля обязательны для заполнения</p>
+          <button class="form__button button" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <ul class="social">
+        <li class="social__list">
+          <a href="#" class="social__list-link social__link--inst">
+            <span class="social__list-icon">
+              <svg width="22" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-insta"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="social__list">
+          <a href="#" class="social__link social__link--fb">
+            <span class="social__list-icon">
+              <svg width="22" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-fb"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="social__list">
+          <a href="#" class="social__link social__link--tw">
+            <span class="social__list-icon">
+              <svg width="22" height="22">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#icon-twitter"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="http://htmlacademy.ru">
+          <span class="copyright__title">Разработано</span>
+          <span class="copyright__icon">
+            <svg width="22" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/img.svg#logo-htmlacademy"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
