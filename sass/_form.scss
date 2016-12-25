@@ -19,7 +19,9 @@
 
   @include desktop {
     padding: 0 225px;
-    line-height: em(30);
+    line-height: 1.875em;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -36,9 +38,18 @@
 
 
   @include desktop {
-    padding: 50px 110px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 50px 113px 0;
     padding-bottom: 0;
   }
+}
+
+.form-group-container {
+  display: flex;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .form-group__title {
@@ -82,6 +93,7 @@
 
   @include desktop {
     padding-right: 30px;
+    padding-left: 90px;
   }
 
 
@@ -369,8 +381,12 @@
     display: flex;
     justify-content: space-between;
 
-    @include desktop {
+    @include tablet {
       margin-bottom: 50px;
+    }
+
+
+    @include desktop {
       padding: 0 225px;
     }
   }

@@ -1,12 +1,22 @@
 @import "variables";
 @import "mixins";
 @import "common";
-@import "header";
-@import "product";
+
+@import "normalize";
+// @import "header";
+@import "header-top";
+@import "header-submenu";
+@import "header-banner";
+
 @import "product-offer";
+@import "product";
 @import "howto";
+
 @import "form";
+
 @import "about-us";
 @import "reviews";
 @import "contacts";
 @import "footer";
+
+@import "popup";
