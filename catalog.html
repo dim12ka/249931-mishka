@@ -4,8 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Каталог мишка</title>
   </head>
 
@@ -229,21 +228,22 @@
         </a>
       </div>
     </footer>
-    <div class="popup hidden">
-      <h3 class="popup__title">Добавить в корозину</h3>
-      <span class="popup__desc">Выберите размер</span>
-      <ul class="size">
-        <li class="size__type">
-          s
-        </li>
-        <li class="size__type">
-          m
-        </li>
-        <li class="size__type">
-          l
-        </li>
-      </ul>
-      <button class="popup__button-add button" type="button">Добавить</button>
+    <div id="popup" class="popup-add-to-cart">
+      <form class="popup-add-to-cart__form" action="post">
+        <h2 class="popup-add-to-cart__title">Добавить в корзину</h2>
+        <p class="popup-add-to-cart__choose-size">
+          Выберите размер:
+        </p>
+        <div class="popup-add-to-cart__size-choose-wrapper">
+          <input id="size-small" name="popup-add-to-cart__radio" type="radio" checked>
+          <label class="popup-add-to-cart__size-toggle" for="size-small">S</label>
+          <input id="size-middle" name="popup-add-to-cart__radio" type="radio">
+          <label class="popup-add-to-cart__size-toggle" for="size-middle">M</label>
+          <input id="size-large" name="popup-add-to-cart__radio" type="radio">
+          <label class="popup-add-to-cart__size-toggle" for="size-large">L</label>
+        </div>
+        <button class="popup-add-to-cart__add-btn btn btn--add-to-cart" type="submit" name="button">Добавить</button>
+      </form>
     </div>
   </body>
 </html>

@@ -41,6 +41,12 @@
   }
 }
 
+.form-group-container {
+  display: flex;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
 .form-group__title {
   text-transform: uppercase;
   margin-bottom: 30px;
